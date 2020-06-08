@@ -1,10 +1,10 @@
-= JumpMind Commerce User Guide
+# JumpMind Commerce User Guide
 
 Copyright (C) 2020 JumpMind, Inc
 
 Version 2.0
 
-== Preface
+## Preface
 
 This user guide introduces JumpMind Commerce... blah blah blah
 

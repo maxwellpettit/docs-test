@@ -1,0 +1,266 @@
+1. Overview
+   1. High Level Description
+   2. Architecture
+      1. Web-based
+      2. Cloud
+      3. On Premise
+      4. Spring Boot
+         1. Comes with all kinds of monitoring hooks
+      5. Microservices
+         1. Configurable Strategies
+            1. Remote then Local
+            2. Local Only
+            3. Remote Only
+      6. Data Integration
+         1. SymmetricDS
+         2. Metl
+      7. Customization
+   3. System Requirements
+      1. Chrome 75+
+   4. Configuration
+      1. Tags
+      2. Yaml
+      3. Database
+   5. Application Modes (Beyond Selling)
+      1. Standalone
+      2. Mobile POS
+      3. Self Checkout
+      4. Customer Display
+      5. Mobile Manager
+      6. Price Checker
+      7. Scan And Go
+   6. Other related documents
+   7. Certifications
+      1. Weights & Measures
+   8. Customer support
+2. UI & Screen Conventions
+   1. Responsiveness
+      1. Customizable breakpoints for different devices
+   2. Language and Locale
+      1. All text is configurable
+      2. All text is language and locale enabled
+      3. Customer facing language chooser component
+   3. Touchscreen
+   4. Keybindings
+      1. Map programabile keyboards
+   5. Icons & Images
+      1. Content Provider
+   6. Virtual keyboard
+   7. General Screens
+      1. Status bar
+      2. Help desk Incident Prompt
+      3. Help Text
+         1. Overlays
+         2. Side Panel
+      4. Lock Screen
+         1. Timeouts
+         2. Break Lock
+      5. Forms
+         1. Configurable
+         2. Input Types
+            1. Google Autofill
+         3. Date entry
+   8. Home Screen
+      1. Configurable buttons
+         1. On/Off
+      2. Notification
+   9. Sell Screen
+      1. Hamburger Menu
+         1. Configurable Buttons On/Off
+      2. Item Area
+      3. Totals Area
+3. User Management
+   1. In Store Management
+   2. Authentication Types
+      1. Strategies
+         1. Lookup
+         2. Authorization
+      2. Local
+      3. SSO
+      4. LDAP
+         1. Mixed mode
+      5. Biometrics (OOB U are U 4500)
+   3. Password Criteria
+   4. Permissions
+   5. Manager Overrides
+   6. Login / Logoff
+4. Daily Operations
+   1. Store Cycle
+      1. Open/Close Store
+      2. Store Bank
+   2. Till Management
+      1. Cashier Accountability
+      2. Till Accountability
+      3. Reconciling
+   3. Reporting
+      1. List of functional reports
+      2. Report/Document Designer
+   4. Alerts & Notifications
+      1. Cash Up
+      2. Cash Down
+   5. Pay In
+   6. Pay Out
+   7. No Sale
+   8. Transaction Operations
+      1. Post Void
+      2. Gift Receipt
+      3. Receipt Reprint
+      4. Orphaned Transactions
+5. Sales
+   1. Prompt For Loyalty At Begin
+   2. Auto log off after Sale
+   3. Unique Key
+      1. Transaction Number
+         1. Configurable Sequence Range
+      2. Device Id - Configurable format
+      3. Business Date yyyyMMdd
+   4. Scanning
+      1. Input Matcher
+   5. Items
+      1. Item Preprocessor
+         1. Auto padding to size
+      2. Images
+      3. Item Groups
+         1. Hierarchy
+         2. General Purpose
+      4. Item Prompts
+         1. On Entry
+         2. At Checkout
+      5. Selling Status Codes
+         1. Sale allowed
+         2. Return allowed
+         3. Return reason code id
+      6. Custom Items
+         1. Prompt For
+      7. Selling Rules
+         1. Weight Entry
+         2. Price Entry
+         3. Quantity Required
+      8. Pricing Rules
+         1. Loyalty Pricing
+      9. Item Operations
+         1. Quantity
+         2. Void
+         3. Price Override
+         4. Manual Discounts
+         5. Tax Override
+   6. Transaction Operations
+      1. Suspend / Resume
+      2. Cancel
+      3. Gift Receipt (QR Code)
+      4. Tax Exempt
+   7. Employee Discounts
+   8. Gift Cards
+      1. Activating
+      2. Reloading
+      3. Get Balance
+      4. Cash Out
+6. Item Inquiry
+   1. Quick Add Buttons
+   2. Home Screen
+   3. Sale Screen
+   4. Infinite Scroll
+   5. Add to sale
+   6. Add to order
+   7. Details
+7. Returns Management
+   1. Return Rules / Configuration
+   2. Return Tenders
+   3. Print Chit
+   4. Reason Codes
+      1. Disposition Codes
+8. Tendering
+   1. Donations
+      1. Preconfigured Amounts
+      2. Round Up
+      3. Enter Amount
+   2. Types
+      1. Cash
+         1. Limits
+      2. Electronic Payment
+      3. Checks
+      4. Gift Cards
+         1. Prompt with amount if card doesn’t cover the transaction total
+      5. Merch Credit
+         1. Disallow purchase of Gift Card with Merch Card
+   3. Non Receipted Return Types
+   4. Receipted Return Types
+   5. Partial Authorization
+      1. In transaction reversals
+   6. Currency Rounding
+9. Receipts
+   1. Email Receipt
+   2. List of OOB receipts
+   3. Receipt/Document Designer
+10. Customers
+   1. Loyalty
+      1. Search
+      2. Sign Up
+      3. Editing
+      4. Linking
+      5. UnLinking
+      6. Unsubscribe
+      7. Display of possible loyalty saving prior to tender
+      8. Rewards
+         1. Prompts
+11. Promotions
+   1. Supported Promotions:
+   2. Associate Promotions
+   3. Loyalty Promotions
+   4. Using Standalone
+12. Tax
+   1. Categories
+   2. Use Location
+   3. Receipt Summary
+   4. Rounding
+   5. Calculation Approach
+      1. Jurisdiction level
+      2. Rolled up
+   6. Brackets
+   7. Fees
+13. Coupons
+   1. Store Coupons
+      1. Pre/Post Tax
+   2. GS1
+      1. Pre/Post Tax
+      2. Manual Linkage with Item
+      3. Family Codes
+14. Peripherals
+   1. Simulators
+   2. Printer (Epson, Toshiba, Brother, NCR, etc.)
+   3. Cash Drawer (attached through printer)
+   4. Payment Devices
+      1. NCR Common Client
+      2. Adyen (coming soon)
+   5. Scanning
+   6. MSR
+   7. Pole Display
+15. Training Mode
+   1. Application operates with different colors (and should have water marks…)
+   2. Separate Sequence Number Range
+16. Orders
+   1. Order notifications, pick list
+   2. BOPIS -  Pick up in Store
+   3. Order in Store (Endless Aisle)
+17. Backoffice
+   1. Manage Tills
+   2. Close Store
+   3. Reports
+18. Beyond POS
+   1. Self Checkout
+   2. Customer Display
+   3. Mobile
+   4. Scan N Go
+   5. Mobile Management
+   6. Price Checking
+19. Appendix
+   1. OOB Integrations
+      1. Appriss
+      2. Vertex
+   2. Automated Testing Suite
+   3. Personalization
+   4. Jobs
+      1. Purge
+      2. Poll Status
+      3. Process Work Queue
+         1. Post transaction retryable tasks
