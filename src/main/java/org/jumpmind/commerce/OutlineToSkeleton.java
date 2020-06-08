@@ -40,7 +40,12 @@ public class OutlineToSkeleton {
             String dir = "src/main/markdown/" + line;
             new File("src/main/markdown/" + line).mkdirs();
 
-            out = new FileOutputStream(new File(dir + "/" +line + ".md"));
+            File file = new File(dir + "/" +line + ".md");
+            if (file.exists()) {
+                throw new RuntimeException("File already exists, this won't overrite existing files. " + dir + "/" +line + ".md");
+            } else {
+                out = new FileOutputStream( new File(dir + "/" +line + ".md"));
+            }
         }
 
         String header = StringUtils.leftPad("",  level, "#");

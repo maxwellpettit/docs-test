@@ -1,5 +1,8 @@
 # Ignore Gradle project-specific cache directory
 .gradle
+commerce-user-guide.iws
+commerce-user-guide.ipr
+commerce-user-guide.iml
 
 # Ignore Gradle build output directory
 build
