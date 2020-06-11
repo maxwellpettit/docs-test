@@ -26,8 +26,8 @@ Maybe this should be a table?
   user is part of a workgroup with that permission, then the user has access.
 - *Authentication* - The process of confirming that the user is who the user says they are.
 - *Authorization* - The permission given to a specific user wokrgroup
-- *SSO*
-- *LDAP*
+- *SSO* - 
+- *LDAP* - 
 
 ## Authentication
 ### Types of Authentication
@@ -35,13 +35,11 @@ Authentication is the confirmation that the user is who the user says they are. 
 The commerce solution supports two secure ways. 
  - Password
  - Biometrics
- - Single Sign On
+ - Single Sign On (SSO)
 #### Password Type
- password is a criteria based password, ensuring uniqueness.  
+ Password is a criteria based password, ensuring uniqueness.  
  
  There are two implementations of password types: Local and LDAP.  Each of these can be used independently or in conjunction via a strategy.
- 
- Local is ...
  
  LDAP, or Lightweight Directory Access Protocol, is another way to store usernames and password. (more detail)
 
@@ -60,39 +58,38 @@ The commerce solution supports two secure ways.
 
 #### SSO Type
 SSO, or single-sign-on, is an authentication strategy that allows for the use of a single username and password for authentication.
-Is this external or internal
+Is this external or internal?
 
 ### Login
   - When a functional subsystem requires a specific authorization the user of the system is prompted to login (link to different section)  
   - The login process uses the commerce systems configured Authentication mechanism (link to different section)
-  - When a user has been login in for a configurable time period without activity, the screen is locked
   
-To log into a user account on Nu commerce, select any function on the main menu and follow the prompted screens to enter a valid user id and password. 
-(Select any function -> enter valid user id -> next -> enter valid passowrd -> next)
+  
 ![alt-text](assets/user-login-user-id.png)
 
 ![alt-text](assets/user-login-user-password.png)
 
 ### Logout
-To logout of a Nu commerce account, select the icon in the upper right hand corner of the screen, and select 'logout'. 
+The logout process allows for a signed in user to exit the commerce system.
 ![alt-text](assets/user-options-logoff.png)
     
   
 ### Lock Screen
-  - Same user must log back in to continue their work
-  - If a manager break the lock, existing transactions are marked as ORPHANED
+- When a user has been login in for a configurable time period without activity, the screen is locked
+- Same user must log back in to continue their work
+- If a manager break the lock, existing transactions are marked as ORPHANED
 
 
 ## Authorization
 
-Each user is assigned to a specific user workgroup which are defined under the usr_workgroup table.
+Each user is assigned to a specific user workgroup which is defined under the usr_workgroup table.
 For example, "Management" and "Retail" are two logical workgroups that can be used to differentiate managers
-from sale associates. Each workgroup is then assigned permissions in the usr_workgroup_permission table which
-determine the access that the users in that workgroup have to different functionality in Nu Commerce.
-The list of possible permissions are found below under [Permissions](users.md#permissions).
+from sale associates.
 
 ### Permissions
-More details about permissions?
+ Each workgroup is assigned permissions in the usr_workgroup_permission table which
+ determine the access that the users in that workgroup have to different functionality in Nu Commerce.
+ The list of possible permissions are found below under [Permissions](users.md#permissions).
 
 ### Manager Override
   - When a user is already logged into the system and they attempt to access a functional subsystem that requires a specific authorization
@@ -108,43 +105,36 @@ TODO screen shots
 ## Administration
 
 ### Managing Users
-Commerce users can be managed through the Manage Users screen. Users can get
-to this screen by selecting the 'Manage' button from the Home screen followed by
-the 'Users' button (Home -> Manage -> Users). Only users in a workgroup who have the 
-permission of *'manage.menu'* are able to enter into the Manage screen and make changes to users:
-
-![alt-text](assets/manage-menu-screen.png)
+Commerce users can be managed by a user in a workgroup that has the permission of *'manage.users'* .
 
 ![alt-text](assets/user-list-no-selected-user.png)
 
 ###### Add User
-Users can be added by selecting the 'Add User' button under the Manage Users screen and filling out the
-required User information.
+Users who have the 'manage.users' permission can add new users into the commerce database.
 
-![alt-text](assets/user-list-no-selected-user.png)
+(view manage user photo)
 
 ![alt-text](assets/users-list-selected-user.png)
 
 ###### Search for User / List Users
-The list of all users is found on the Manage Users screen.
+A list of all users and their workgroups can be found and accessed by users with the proper permissions. 
 
-![alt-text](assets/manage-menu-screen.png)
 
 ![alt-text](assets/user-list-no-selected-user.png)
 
 ###### Display / Edit User Information
-To make changes to a user's information, select the user in the Manage Users screen and then click 'Edit User'.
+User information can be displayed and edited by a user with the *'manage.users'* permission or by using a manager override.
 
 ![alt-text](assets/users-edit-user.png)
 
 ###### Reset User Password
-A user's password can be reset by selecting the user on the manage users screen and then clicking 'Edit User'.
+Ability to reset/change any users password. Must have permission or manager override to access
 
 ![alt-text](assets/users-edit-user.png)
 
 ###### Lock / Disable User Account
-Concept- ability to stop a user from being able to access the system
+A user can have their account locked or disbaled by a member with the access to do so.
 
 ###### Unlock User Account
-Concept- ability to give access back to a user to use the  system
+users whose accounts have been disabled can have access regranted to them
 
