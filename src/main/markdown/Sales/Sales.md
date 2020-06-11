@@ -1,7 +1,7 @@
 # Sales
 
 ## Prompt For Loyalty At Begin
-At the begining of transacion, after entering the sale, the user will be prompted to find an existing loyalty customer or add a new loyalty customer.
+At the begining of a transacion, after entering the sale, the user will be prompted to find an existing loyalty customer or add a new loyalty customer.
 ![alt-text](assets/loyalty-prompt.png)
 
 ## Auto log off after Sale
