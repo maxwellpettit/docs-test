@@ -1,27 +1,44 @@
 # User Management
-
+User management is what allows the user to use the application. pretty much a who can do what
+concept vs. functional 
+functiona is how the conept is used
 ## In Store Management
-
+The ability to manage user accounts in store.
+- add acounts 
+- edit accounts
+- erase accounts 
 ## Authentication Types
+Authentication is the confirmation that the user is who the user says they are. There are several ways to achieve this. 
+Nucommerce supports two secure ways. 
+1. Password-  passowrd is a criteria based password, ensuring uniqueness.
+2. Fingerprint Biometrics (MORE DETAIL ON FINGERPRINT)  
+
+Internal vs. External verification 
+1. The internal verification is when the password or fingeprint biometrics is approved locally within Nucommerce
+2. The external verification is when the access is granted through a third party after a seperate verifcation process, meaning it is not done through Nu commerce.
 
 ### Strategies
+- Authentication
+- Authorizaion
 
 #### Lookup
 
 #### Authorization
+[not sure this belongs here] Authorization is the extent to which the user is able to use the software. differnt wokrgroups have differnt accces and differnt users sre assigned to different wokrgroups. for example, you can have a cahiser, amnager, assitant manger and each of these roles have differnt persmision. 
 
 ### Local
 
 #### Terminology
   * *User* - An individual with his/her own username and password that can log into Nu Commerce. 
-  * *User Workgroup* - A grouping to differentiate different types of users 
+  * *User Workgroup* - A grouping of users with the same access.
   ie. Management, Retail. Each individual User is assigned to one User Workgroup.
   * *Permission* -  Permissions define functionality in the point of sale that determine if 
   a user can access said function. Permissions are assigned to user workgroups and if the
   user is part of a workgroup with that permission, then the user has access.
-  
+  * *Authentication* - The process of confirming that the user is who the user says they are.
+  * *Authorization* - The permission given to a specific user wokrgroup
 #### Functional
-
+ow all of the above metoed concepts rok
 ##### Managing Users
 Nu Commerce users can be managed through the Manage Users screen. Users can get
 to this screen by selecting the 'Manage' button from the Home screen followed by
@@ -54,7 +71,7 @@ To make changes to a user's information, select the user in the Manage Users scr
 ![alt-text](assets/users-edit-user.png)
 
 ###### Reset User Password
-A user's password can be reset by selecting the user and clicking 'Edit User'.
+A user's password can be reset by selecting the user on the manage users screen and clicking 'Edit User'.
 
 ![alt-text](assets/users-edit-user.png)
 
@@ -106,5 +123,5 @@ To log into a user account on Nu commerce, select any function on the main menu 
 ![alt-text](assets/user-login-user-password.png)
 
 ### Logout
-To logout of your Nu commerce account, select the icon in the upper right hand corner of your screen, and select 'logout'. 
+To logout of a Nu commerce account, select the icon in the upper right hand corner of the screen, and select 'logout'. 
 ![alt-text](assets/user-options-logoff.png)
