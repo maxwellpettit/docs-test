@@ -4,9 +4,9 @@ authentication and authorization to commerce applications as well as verificatio
 that individuals belong to the organization.   
 
 ## Concepts
-User management consists of three major concepts.
+User management consists of four major concepts.
 
-- *Authentication* is the validation that the user has access to the system.  This is usually accomplished by 
+- *Authentication* is the validation that the user has access to the system. This is usually accomplished by 
 providing a username and a password, but can be accomplished in other ways.
 - *Authorization* is the concept of providing access to different functionality in a commerce application. 
 Permission are assigned to workgroups and users are added to their job specific workgroup, giving them certain permissions.
@@ -17,31 +17,34 @@ have this feature disabled because users are sourced from other systems.
 
 ## Terminology
 
-Maybe this should be a table?
+__Maybe this should be a table?__
 
-- *User* - An individual with his/her own username and password that can log into Nu Commerce. 
+- *User* - An individual with his/her own username and password that can log into Commerce. 
 - *User Workgroup* - A grouping of users with the same access. ie. Management, Retail. Each individual User is assigned to one User Workgroup.
 - *Permission* -  Permissions define functionality in the point of sale that determine if 
   a user can access a said function. Permissions are assigned to user workgroups and if the
   user is part of a workgroup with that permission, then the user has access.
 - *Authentication* - The process of confirming that the user is who the user says they are.
 - *Authorization* - The permission given to a specific user wokrgroup
-- *SSO* - 
-- *LDAP* - 
+- *SSO* - SSO, or single-sign-on, is an authentication strategy that allows for the use of a single username and password for authentication.
+- *LDAP* - OVER MY HEAD
+- *Manager override* - The manager has the ability to permit an action that another user does not have the perission id for.
 
 ## Authentication
+
 ### Types of Authentication
 Authentication is the confirmation that the user is who the user says they are. There are several ways to achieve this. 
-The commerce solution supports two secure ways. 
+The commerce solution supports a few secure ways. 
  - Password
  - Biometrics
  - Single Sign On (SSO)
 #### Password Type
- Password is a criteria based password, ensuring uniqueness.  
+ Password is criteria based password, ensuring uniqueness.  
  
  There are two implementations of password types: Local and LDAP.  Each of these can be used independently or in conjunction via a strategy.
  
- LDAP, or Lightweight Directory Access Protocol, is another way to store usernames and password. (more detail)
+ LDAP, or Lightweight Directory Access Protocol, is ...
+ - __should this be a heading like SSO__ 
 
 ##### Password Type Strategies
 - User Strategy
@@ -52,8 +55,8 @@ The commerce solution supports two secure ways.
   - LDAP
   - Mixed
  
-#### Fingerprint Biometrics Type (MORE DETAIL ON FINGERPRINT)  
-- OOB, or out-of-band, authentication uses a second, and seperate communication channel to make authentication more secure.
+#### Fingerprint Biometrics Type 
+- OOB, or out-of-band, authentication uses a second, and seperate communication channel to authenticate a user.
 - [U.are.U 4500](https://www.neurotechnology.com/fingerprint-scanner-digitalpersona-u-are-u-4500.html) is the model of biometric scanner.
 
 #### SSO Type
@@ -61,10 +64,11 @@ SSO, or single-sign-on, is an authentication strategy that allows for the use of
 Is this external or internal?
 
 ### Login
+?
   - When a functional subsystem requires a specific authorization the user of the system is prompted to login (link to different section)  
   - The login process uses the commerce systems configured Authentication mechanism (link to different section)
   
-  
+  __Do we want these pics. I thjink it damages the flow of the doc a little__
 ![alt-text](assets/user-login-user-id.png)
 
 ![alt-text](assets/user-login-user-password.png)
@@ -75,66 +79,74 @@ The logout process allows for a signed in user to exit the commerce system.
     
   
 ### Lock Screen
+paragraph-
+When a user has been login in for a configurable time period without activity, the screen is locked, and that same user must relogin to continue work. If a manager breaks the lock, any existing transactions are marked as ORPHANED 
+
+bullets- 
 - When a user has been login in for a configurable time period without activity, the screen is locked
 - Same user must log back in to continue their work
-- If a manager break the lock, existing transactions are marked as ORPHANED
+- If a manager breaks the lock, any existing transactions are marked as ORPHANED
 
 
 ## Authorization
 
-Each user is assigned to a specific user workgroup which is defined under the usr_workgroup table.
-For example, "Management" and "Retail" are two logical workgroups that can be used to differentiate managers
-from sale associates.
+Each user is authorized for a specific user workgroup which is defined under the usr_workgroup table.
+For example, "Management" and "Retail" are two logical workgroups that can be used to differentiate a managers access
+from sale associates access.
+- __this is already said in concepts. not sure if it is repetitive as other concepts dont have wording here__
 
 ### Permissions
  Each workgroup is assigned permissions in the usr_workgroup_permission table which
- determine the access that the users in that workgroup have to different functionality in Nu Commerce.
- The list of possible permissions are found below under [Permissions](users.md#permissions).
+ determine the access that the users in that workgroup have to different functionalities in Commerce.
+ The list of possible permissions are found under [Permissions](users.md#permissions). *<- need this*
 
 ### Manager Override
-  - When a user is already logged into the system and they attempt to access a functional subsystem that requires a specific authorization
-    that the logged in user does not already have they are prompted for a manager override
-  - Is this always true or does manager override need to be enabled?
+  When a user is already logged into the system and they attempt to access a functional subsystem that requires a specific authorization
+    that the logged in user does not already have they are prompted for a manager override if the function is overrideable.
+  - __Is this always true or does manager override need to be enabled?__ 
 
 TODO screen shots  
 
 ## Verification
 - Commerce apps can lookup users for use in other parts of the system.
 - Employee Discounts
+__Is this for instnaces when a company has several stores and an employee wants to use a discount at a sore they do not work at.__ 
 
 ## Administration
 
 ### Managing Users
 Commerce users can be managed by a user in a workgroup that has the permission of *'manage.users'* .
-
+__( do we have a section for changing permissions, ex. if a user were to get promoted from retailer to manager)__
 ![alt-text](assets/user-list-no-selected-user.png)
-
+- __The following six user management funcions require the *'manage.users'* permission id.__
+####  *'manage.users'* Permission id required 
+__Wanted to find a way to show the 6 following functions and mention they need the *'manage.users'* permission without typing that into each other to avoid being repetitve__
 ###### Add User
-Users who have the 'manage.users' permission can add new users into the commerce database.
+Addional users can be added to the system and their designated workgroups when desired( dont love the word desired here)
 
-(view manage user photo)
+__(view manage user photo) reference imaging would be nice here__
 
 ![alt-text](assets/users-list-selected-user.png)
 
 ###### Search for User / List Users
-A list of all users and their workgroups can be found and accessed by users with the proper permissions. 
-
+A functionality where a list of all users and their respective workgroups can be accessed.
 
 ![alt-text](assets/user-list-no-selected-user.png)
 
 ###### Display / Edit User Information
-User information can be displayed and edited by a user with the *'manage.users'* permission or by using a manager override.
+Individual user information can be displayed and edited.
+ - (Name, Username, Password) 
 
 ![alt-text](assets/users-edit-user.png)
 
 ###### Reset User Password
-Ability to reset/change any users password. Must have permission or manager override to access
+Any user can have their password reset. If current password has reached expiration or password was forgotten. 
 
 ![alt-text](assets/users-edit-user.png)
 
 ###### Lock / Disable User Account
-A user can have their account locked or disbaled by a member with the access to do so.
+A user can have their account locked or disabled removing their access to Commerce functionality. 
 
 ###### Unlock User Account
-users whose accounts have been disabled can have access regranted to them
+Locked/Disabled user accounts can be unlocked which re-grants them their respective workgroup permission id's. 
 
