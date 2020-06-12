@@ -119,8 +119,10 @@ Commerce users can be managed by a user in a workgroup that has the permission o
 __( do we have a section for changing permissions, ex. if a user were to get promoted from retailer to manager)__
 ![alt-text](assets/user-list-no-selected-user.png)
 - __The following six user management funcions require the *'manage.users'* permission id.__
+
 ####  *'manage.users'* Permission id required 
 __Wanted to find a way to show the 6 following functions and mention they need the *'manage.users'* permission without typing that into each other to avoid being repetitve__
+
 ###### Add User
 Addional users can be added to the system and their designated workgroups when desired( dont love the word desired here)
 
