@@ -19,32 +19,29 @@ have this feature disabled because users are sourced from other systems.
 
 __Maybe this should be a table?__
 
-- *User* - An individual with his/her own username and password that can log into Commerce. 
-- *User Workgroup* - A grouping of users with the same access. ie. Management, Retail. Each individual User is assigned to one User Workgroup.
-- *Permission* -  Permissions define functionality in the point of sale that determine if 
-  a user can access a said function. Permissions are assigned to user workgroups and if the
-  user is part of a workgroup with that permission, then the user has access.
-- *Authentication* - The process of confirming that the user is who the user says they are.
-- *Authorization* - The permission given to a specific user wokrgroup
-- *SSO* - SSO, or single-sign-on, is an authentication strategy that allows for the use of a single username and password for authentication.
-- *LDAP* - OVER MY HEAD
-- *Manager override* - The manager has the ability to permit an action that another user does not have the perission id for.
+| Term | Definition |
+|------|---------------|
+| User | An individual with his/her own username and password that can log into commerce. | 
+| User Workgroup | A grouping of users with the same access. ie. Management, Retail. Each individual User is assigned to one User Workgroup. |
+| Permission | Permissions define functionality in the point of sale that determine if a user can access a said function. Permissions are assigned to user workgroups and if the user is part of a workgroup with that permission, then the user has access. |
+| Authentication | The process of confirming that the user is who the user says they are. |
+| Authorization | The permission given to a specific user wokrgroup. |
+| SSO | SSO, or single-sign-on, is an authentication strategy that allows for the use of a single username and password for authentication. |
+| LDAP | LDAP (Lightweight Directory Access Protocol) is an open and cross platform protocol used for directory services authentication. LDAP provides the communication language that applications use to communicate with other directory services servers. |
+| Manager override | The manager has the ability to permit an action that another user does not have the permission id for. |
 
 ## Authentication
+Authentication is the confirmation that the user is who the user says they are. There are several ways to achieve this. 
 
 ### Types of Authentication
-Authentication is the confirmation that the user is who the user says they are. There are several ways to achieve this. 
 The commerce solution supports a few secure ways. 
  - Password
  - Biometrics
  - Single Sign On (SSO)
 #### Password Type
- Password is criteria based password, ensuring uniqueness.  
+Password authentication is via a typical user login.  The user provides both a username and a password.    
  
- There are two implementations of password types: Local and LDAP.  Each of these can be used independently or in conjunction via a strategy.
- 
- LDAP, or Lightweight Directory Access Protocol, is ...
- - __should this be a heading like SSO__ 
+There are two implementations of password types: Local and LDAP.  Each of these can be used independently or in conjunction via a strategy.
 
 ##### Password Type Strategies
 - User Strategy
@@ -56,14 +53,14 @@ The commerce solution supports a few secure ways.
   - Mixed
  
 #### Fingerprint Biometrics Type 
-- OOB, or out-of-band, authentication uses a second, and seperate communication channel to authenticate a user.
+- OOB, or out-of-band, authentication uses a second, and separate communication channel to authenticate a user.
 - [U.are.U 4500](https://www.neurotechnology.com/fingerprint-scanner-digitalpersona-u-are-u-4500.html) is the model of biometric scanner.
 
 #### SSO Type
 SSO, or single-sign-on, is an authentication strategy that allows for the use of a single username and password for authentication.
 Is this external or internal?
 
-### Login
+### The Login Process 
 ?
   - When a functional subsystem requires a specific authorization the user of the system is prompted to login (link to different section)  
   - The login process uses the commerce systems configured Authentication mechanism (link to different section)
@@ -73,12 +70,12 @@ Is this external or internal?
 
 ![alt-text](assets/user-login-user-password.png)
 
-### Logout
+### The Logout Process
 The logout process allows for a signed in user to exit the commerce system.
 ![alt-text](assets/user-options-logoff.png)
     
   
-### Lock Screen
+### The Lock Screen
 paragraph-
 When a user has been login in for a configurable time period without activity, the screen is locked, and that same user must relogin to continue work. If a manager breaks the lock, any existing transactions are marked as ORPHANED 
 
