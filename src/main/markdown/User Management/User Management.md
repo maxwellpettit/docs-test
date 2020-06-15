@@ -1,23 +1,31 @@
 # User Management
-User management is the functional module that is responsible for providing 
-authentication and authorization to commerce applications as well as verification 
-that individuals belong to the organization.   
+The User Management module is responsible for providing authentication and authorization to the 
+commerce applications as well as verification that individuals belong to the organization.  Through User
+Management, a set of users user workgroups can be can be created and maintained that control permissions
+for a set of users in a common bussiness role (i.e. cashier, store manager, etc.)  
+
+In addition to internal, commerce managed users and user workgroups, out of the box integrations
+can be used to validate users and roles from third party systems such as Single Sign On and other
+Lighteweight Directory Access Protocol (LDAP) based systems.
 
 ## Concepts
-User management consists of four major concepts.
+User management provides capabilities for four major concepts:
 
-- *Authentication* is the validation that the user has access to the system. This is usually accomplished by 
-providing a username and a password, but can be accomplished in other ways.
-- *Authorization* is the concept of providing access to different functionality in a commerce application. 
-Permission are assigned to workgroups and users are added to their job specific workgroup, giving them certain permissions.
+- *Authentication* is the process of verifying who a user is. This is usually accomplished by 
+providing a username and a password, but can be accomplished in other ways including biometrics, tokens
+ (key fob or software token), etc. or can be used in combination to provide two factor authentication.
+
+- *Authorization* is the process of verifying what a user has access to within an application. 
+Permissions are assigned to workgroups and users are added to their job specific workgroup resulting
+in different functional access to the appliation by user and user workgroup.
+
 - *Verification* is used by commerce application to validate that an individual is active and belongs to the organization.
 An example of verification is the employee discount functionality.
-- *Administration* is the act of adding and managing users.  Most enterprise implementations
+
+- *Administration* is the act of adding and managing users and user workgroups.  Most enterprise implementations
 have this feature disabled because users are sourced from other systems.
 
 ## Terminology
-
-__Maybe this should be a table?__
 
 | Term | Definition |
 |------|---------------|
@@ -34,38 +42,22 @@ __Maybe this should be a table?__
 Authentication is the confirmation that the user is who the user says they are. There are several ways to achieve this. 
 
 ### Types of Authentication
-The commerce solution supports a few secure ways. 
+The commere solution provides authentication through internal security measures or through integration
+to third party systems.  For internal security, the commerce application can provide authentication through: 
  - Password
- - Biometrics
- - Single Sign On (SSO)
-#### Password Type
-Password authentication is via a typical user login.  The user provides both a username and a password.    
+ - Biometric (fingerprint)
  
-There are two implementations of password types: Local and LDAP.  Each of these can be used independently or in conjunction via a strategy.
-
-##### Password Type Strategies
-- User Strategy
-  - Local
-  - LDAP
-- Password Strategy
-  - Local
-  - LDAP
-  - Mixed
+ For security through integration to a third party system, the commerce application has out of the box
+ integration for:
+ - LDAP
  
-#### Fingerprint Biometrics Type 
-- OOB, or out-of-band, authentication uses a second, and separate communication channel to authenticate a user.
-- [U.are.U 4500](https://www.neurotechnology.com/fingerprint-scanner-digitalpersona-u-are-u-4500.html) is the model of biometric scanner.
+ Other custom integration for authentication can also be easily completed for various single sign on (SSO) 
+ systems.
+ 
+### The Authentication Process 
 
-#### SSO Type
-SSO, or single-sign-on, is an authentication strategy that allows for the use of a single username and password for authentication.
-Is this external or internal?
-
-### The Login Process 
-?
-  - When a functional subsystem requires a specific authorization the user of the system is prompted to login (link to different section)  
-  - The login process uses the commerce systems configured Authentication mechanism (link to different section)
+  - When attenpting to use the system, a user is prompted to login  
   
-  __Do we want these pics. I thjink it damages the flow of the doc a little__
 ![alt-text](assets/user-login-user-id.png)
 
 ![alt-text](assets/user-login-user-password.png)
@@ -76,44 +68,41 @@ The logout process allows for a signed in user to exit the commerce system.
     
   
 ### The Lock Screen
-paragraph-
-When a user has been login in for a configurable time period without activity, the screen is locked, and that same user must relogin to continue work. If a manager breaks the lock, any existing transactions are marked as ORPHANED 
+When a user has been logged into the system for a configurable time period without activity, 
+the screen is locked, and that same user must re-login to continue work. 
 
-bullets- 
-- When a user has been login in for a configurable time period without activity, the screen is locked
-- Same user must log back in to continue their work
-- If a manager breaks the lock, any existing transactions are marked as ORPHANED
+:TODO put a screenshot of the lock screen here...
 
+If the system is locked by a user who is no longer available, another user may "break"
+the lock if that user has appropriate permissions to do so.  If a user lock is broken, and the previous
+user was in the middle of ringing a transaction, the existing transaction is abandoned
+ and marked as ORPHANED. 
 
 ## Authorization
 
-Each user is authorized for a specific user workgroup which is defined under the usr_workgroup table.
-For example, "Management" and "Retail" are two logical workgroups that can be used to differentiate a managers access
-from sale associates access.
-- __this is already said in concepts. not sure if it is repetitive as other concepts dont have wording here__
+Each user is associated with one or more user workgroups (i.e. "Cashier" and "Management" are two logical 
+workgroups that can be created to differentiate a sales associate's access versus a manager's access.
 
 ### Permissions
- Each workgroup is assigned permissions in the usr_workgroup_permission table which
- determine the access that the users in that workgroup have to different functionalities in Commerce.
- The list of possible permissions are found under [Permissions](users.md#permissions). *<- need this*
+ Each workgroup is assigned permissions which determine the access that the users in that workgroup have 
+ to different functionalities in Commerce.  The list of possible permissions are found under 
+ [Permissions](users.md#permissions).
 
 ### Manager Override
-  When a user is already logged into the system and they attempt to access a functional subsystem that requires a specific authorization
+  When a user is already logged into the system and they attempt access to a functional subsystem that requires a specific authorization
     that the logged in user does not already have they are prompted for a manager override if the function is overrideable.
-  - __Is this always true or does manager override need to be enabled?__ 
-
-TODO screen shots  
+  
+:TODO screen shots  
 
 ## Verification
-- Commerce apps can lookup users for use in other parts of the system.
-- Employee Discounts
-__Is this for instnaces when a company has several stores and an employee wants to use a discount at a sore they do not work at.__ 
+Identifying a user can be useful in other scenarios in the commerce engine other than authentication.  
+Users cam be verified for things such as providing employee discounts, etc.  When an employee discount
+is provided the reuested user can verfied against the user store.
 
 ## Administration
 
 ### Managing Users
 Commerce users can be managed by a user in a workgroup that has the permission of *'manage.users'* .
-__( do we have a section for changing permissions, ex. if a user were to get promoted from retailer to manager)__
 ![alt-text](assets/user-list-no-selected-user.png)
 - __The following six user management funcions require the *'manage.users'* permission id.__
 
