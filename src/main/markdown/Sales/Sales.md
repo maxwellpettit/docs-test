@@ -1,31 +1,64 @@
 # Sales
 
-## Prompt For Loyalty At Begin
-At the begining of a transacion, after entering the sale, the user will be prompted to find an existing loyalty customer or add a new loyalty customer.
-![alt-text](assets/loyalty-prompt.png)
+A sale is the exchange of a commodity for money; the action of selling something.
 
-## Auto log off after Sale
-Following each sale, the auto logout feature will log the user out of their account.
+This section of the documentation will address the features available 
+to create a sale.  It will not include the checkout process which will
+be discussed in another section.
 
-## Unique Key
+## Concepts
 
-### Transaction Number
+Some of the key concepts that will be address in this section include:
+- *Transactions* - A retail transaction is a stored representation of a sale.
+- *Items* - Items are individual goods or services that are sold
+- *Gift Cards* - Gift cards are electronic backed cards entitling the 
+                 recipient to receive goods or services of a specified value from the issuer.
+
+## Terminology
+
+| Term | Definition | 
+|------|------------|
+|      |            |
+
+## Transactions
+Talk about the different type of transactions:
+  - Control - link to ops
+  - Retail - The representation of a sale, return or exchange
+  - Inquiry - Gift card balance inquiry outside of a retail transaction
+  - Void - post void of an earlier transaction
+  
+### Unique Key
+
+#### Transaction Number
 
 #### Configurable Sequence Range
 
-### Device Id - Configurable format
+#### Device Id - Configurable format
 
-### Business Date yyyyMMdd
+#### Business Date yyyyMMdd
 
-## Scanning
+### Operations
 
-### Input Matcher
+#### Suspend / Resume
+
+#### Cancel
+
+#### Gift Receipt (QR Code)
+
+#### Tax Exempt
+
+#### Employee Discounts
 
 ## Items
 
-### Item Preprocessor
+### Entry
 
-#### Auto padding to size
+#### Scanning
+
+#### Input Matcher
+
+#### Item Preprocessor
+- Auto padding to size
 
 ### Images
 
@@ -65,7 +98,7 @@ Following each sale, the auto logout feature will log the user out of their acco
 
 #### Loyalty Pricing
 
-### Item Operations
+### Operations
 
 #### Quantity
 
@@ -100,19 +133,6 @@ Manual transaction disounts can be applied to the entire transaction by selectin
 ![alt-text](assets/tax-percent-override.png)
 
 ![alt-text](assets/sell-item-menu.png)
-
-
-## Transaction Operations
-
-### Suspend / Resume
-
-### Cancel
-
-### Gift Receipt (QR Code)
-
-### Tax Exempt
-
-## Employee Discounts
 
 ## Gift Cards
 

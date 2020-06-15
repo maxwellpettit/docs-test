@@ -2,6 +2,8 @@
 
 ## Loyalty
 
+### Prompt For Loyalty At Begin
+
 ### Search
 
 ### Sign Up

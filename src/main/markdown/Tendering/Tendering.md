@@ -36,3 +36,7 @@
 
 ## Currency Rounding
 
+## Auto log off after Sale
+Following each sale, the auto logout feature will log the user out of their account.
+
+
