@@ -1,7 +1,7 @@
 # User Management
 The User Management module is responsible for providing authentication and authorization to the 
-commerce applications as well as verification that individuals belong to the organization.  Through User
-Management, a set of users user workgroups can be can be created and maintained that control permissions
+commerce applications as well as verification that individuals belong to the organization. Through User
+Management, a set of user workgroups can be created and maintained that control permissions
 for a set of users in a common bussiness role (i.e. cashier, store manager, etc.)  
 
 In addition to internal, commerce managed users and user workgroups, out of the box integrations
@@ -56,7 +56,7 @@ to third party systems.  For internal security, the commerce application can pro
  
 ### The Authentication Process 
 
-  - When attenpting to use the system, a user is prompted to login  
+  - When attempting to use the system, a user is prompted to login  
   
 ![alt-text](assets/user-login-user-id.png)
 
@@ -71,7 +71,7 @@ The logout process allows for a signed in user to exit the commerce system.
 When a user has been logged into the system for a configurable time period without activity, 
 the screen is locked, and that same user must re-login to continue work. 
 
-:TODO put a screenshot of the lock screen here...
+![alt-text](assets/lock-screen.png)
 
 If the system is locked by a user who is no longer available, another user may "break"
 the lock if that user has appropriate permissions to do so.  If a user lock is broken, and the previous
@@ -85,19 +85,19 @@ workgroups that can be created to differentiate a sales associate's access versu
 
 ### Permissions
  Each workgroup is assigned permissions which determine the access that the users in that workgroup have 
- to different functionalities in Commerce.  The list of possible permissions are found under 
+ to different functionalities in Commerce. The list of possible permissions are found under 
  [Permissions](users.md#permissions).
 
 ### Manager Override
   When a user is already logged into the system and they attempt access to a functional subsystem that requires a specific authorization
     that the logged in user does not already have they are prompted for a manager override if the function is overrideable.
-  
-:TODO screen shots  
+   
+![alt-text](assets/manager-override-prompt.png) 
 
-## Verification
+## Verification 
 Identifying a user can be useful in other scenarios in the commerce engine other than authentication.  
-Users cam be verified for things such as providing employee discounts, etc.  When an employee discount
-is provided the reuested user can verfied against the user store.
+Users can be verified for things such as providing employee discounts, etc.  When an employee discount
+is provided the requested user can verified against the user store.
 
 ## Administration
 
@@ -105,9 +105,6 @@ is provided the reuested user can verfied against the user store.
 Commerce users can be managed by a user in a workgroup that has the permission of *'manage.users'* .
 ![alt-text](assets/user-list-no-selected-user.png)
 - __The following six user management funcions require the *'manage.users'* permission id.__
-
-####  *'manage.users'* Permission id required 
-__Wanted to find a way to show the 6 following functions and mention they need the *'manage.users'* permission without typing that into each other to avoid being repetitve__
 
 ###### Add User
 Addional users can be added to the system and their designated workgroups when desired( dont love the word desired here)
@@ -122,7 +119,7 @@ A functionality where a list of all users and their respective workgroups can be
 ![alt-text](assets/user-list-no-selected-user.png)
 
 ###### Display / Edit User Information
-Individual user information can be displayed and edited.
+Individual user information can be displayed through the manager users functionality
  - (Name, Username, Password) 
 
 ![alt-text](assets/users-edit-user.png)
