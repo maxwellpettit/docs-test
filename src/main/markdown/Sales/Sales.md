@@ -20,6 +20,86 @@ Some of the key concepts that will be address in this section include:
 |------|------------|
 |      |            |
 
+## Sales Screen
+
+### Automated Loyalty Prompt
+
+### Screen Header
+
+#### Application / Transaction Menu
+
+#### User Information
+
+##### Lock Screen
+
+##### Logout
+
+##### Change Password
+
+### Transaction Summary
+
+#### Subtotal
+
+#### Discounts / Credits
+
+#### Tax
+
+#### Amount Due 
+
+### Rewards
+
+#### Find Customer
+
+#### New Customer
+
+### Screen Footer
+
+#### Date and Time
+
+#### Transaction Information
+
+### Selling an item
+
+#### Scanning an item
+
+#### Hand keying an item
+
+### Item detail panel
+
+#### Item Image
+
+#### Item Description
+
+#### Sale Amount
+
+####  Discounts / Promotions
+
+### Item Options
+
+#### Remove
+
+#### Price Override
+
+#### Discount
+
+#### Change Quantity
+
+#### Gift Receipt
+
+#### Tax Override
+
+### Transaction Options
+
+#### Suspend / Resume
+
+#### Cancel
+
+#### Tax Exempt
+
+#### Employee Discounts
+
+TODO: ignore below this for now
+
 ## Transactions
 Talk about the different type of transactions:
   - Control - link to ops
