@@ -102,36 +102,81 @@ is provided the requested user can verified against the user store.
 ## Administration
 
 ### Managing Users
-Commerce users can be managed by a user in a workgroup that has the permission of *'manage.users'* .
+Commerce users with manager access have the ability to mange users in their database.
+ TODO SCREENSHOTS
+
+*The functions involved in managing users are:*
+
+-  ##### Add User 
+Create new JumpMind Commerce user accounts to assign a new user to a workgroup. TODO SCREENSHOTS
+ 
+ *After a User has been added, this user can be subject to the following functionalities.*
+  
+-  ##### Search for User / List Users
+A list of all pre-existing users, along with their respective workgroups gives accces, allowing for account removal or for the user information to be disaplyed and edited.
+ TODO SCREENSHOTS
+ 
+-  ##### Display / Edit User Information_
+Once the user has been selected their information can be viewed and edited
+ TODO SCREENSHOTS
+ 
+- ##### Reset User Password
+User passwords can be reset 
+ TODO SCREENSHOTS
+ 
+- ##### Lock / Disable User Account
+JumpMind Commerce user accounts can be revoked access through locking a user account.
+ TODO SCREENSHOTS
+ 
+- ##### Unlock User Account
+Locked/Disabled user accounts can be unlocked which re-grants the user their respective workgroup permission id's. 
+ TODO SCREENSHOTS
+ 
+!! different variation !!
+### Managing Users
+Commerce users with manager access have the ability to manage users in their database.
+
 ![alt-text](assets/user-list-no-selected-user.png)
-- __The following six user management funcions require the *'manage.users'* permission id.__
 
-###### Add User
-Addional users can be added to the system and their designated workgroups when desired( dont love the word desired here)
+The highlighted functions involved in managing users are:
 
-__(view manage user photo) reference imaging would be nice here__
 
-![alt-text](assets/users-list-selected-user.png)
+-  Add User
 
-###### Search for User / List Users
-A functionality where a list of all users and their respective workgroups can be accessed.
+- Display / Edit User Information
 
-![alt-text](assets/user-list-no-selected-user.png)
+- Search for User / List Users
 
-###### Display / Edit User Information
-Individual user information can be displayed through the manager users functionality
- - (Name, Username, Password) 
+- Remove user 
 
-![alt-text](assets/users-edit-user.png)
+- Reset User Password
 
-###### Reset User Password
-Any user can have their password reset. If current password has reached expiration or password was forgotten. 
+- Lock / Disable User Account
 
-![alt-text](assets/users-edit-user.png)
+- Unlock User Account
 
-###### Lock / Disable User Account
-A user can have their account locked or disabled removing their access to Commerce functionality. 
 
-###### Unlock User Account
-Locked/Disabled user accounts can be unlocked which re-grants them their respective workgroup permission id's. 
-
+ ##### Add User 
+Create new JumpMind Commerce user accounts to assign a new user to a workgroup. TODO SCREENSHOTS
+ 
+ *After a User has been added, this user can be subject to the following functionalities.*
+  
+ ##### Search for User / List Users
+A list of all pre-existing users, along with their respective workgroups gives access, allowing for account removal or for the user information to be disaplyed and edited.
+ TODO SCREENSHOTS
+ 
+ ##### Display / Edit User Information_
+Once the user has been selected their information can be viewed and edited. specifically, name, username, and password.
+ TODO SCREENSHOTS
+ 
+ ##### Reset User Password
+User passwords can be reset 
+ TODO SCREENSHOTS
+ 
+##### Lock / Disable User Account
+JumpMind Commerce user accounts can be revoked access through locking a user account.
+ TODO SCREENSHOTS
+ 
+##### Unlock User Account
+Locked/Disabled user accounts can be unlocked which re-grants the user their respective workgroup permission id's. 
+ TODO SCREENSHOTS
