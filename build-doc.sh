@@ -40,9 +40,11 @@ echo $'\n' >>  out/JumpMind-Commerce-User-Manual.md
 cat "src/main/markdown/Appendix/Appendix.md" >> out/JumpMind-Commerce-User-Manual.md
 echo $'\n' >>  out/JumpMind-Commerce-User-Manual.md
 
-# Convert to docx
-pandoc -s out/JumpMind-Commerce-User-Manual.md -o out/JumpMind-Commerce-User-Manual.docx
+RESOURCE_SEARCH_PATH="src/main/markdown/User Management/:src/main/markdown/Sales/"
 
- open out/JumpMind-Commerce-User-Manual.docx
+# Convert to docx
+pandoc --resource-path "$RESOURCE_SEARCH_PATH" -s out/JumpMind-Commerce-User-Manual.md -o out/JumpMind-Commerce-User-Manual.docx
+
+open out/JumpMind-Commerce-User-Manual.docx
 
 echo "Generated out/JumpMind-Commerce-User-Manual.docx" 
