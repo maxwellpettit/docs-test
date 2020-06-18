@@ -95,7 +95,7 @@ TODO SCREENSHOTS
     The date and time are easily viewable in the bottom left of a transaction screen, and are configurable to times zones and configration in how they are read.
 TODO SCREENSHOTS
 
-- #### Transaction Information
+- #### Transaction In       formation
     The transaction number __number per day?__ and a running timer for the given transaction are viewable in the sell screen
 
 ### Selling an item
