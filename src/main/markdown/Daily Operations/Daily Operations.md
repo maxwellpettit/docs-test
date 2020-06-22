@@ -5,7 +5,7 @@
 ### Open/Close Store
 
 ### Store Bank
-
+![alt-text](assets/manage-menu-screen.png)
 ## Till Management
 
 ### Cashier Accountability

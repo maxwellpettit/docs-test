@@ -18,84 +18,92 @@ Some of the key concepts that will be address in this section include:
 
 | Term | Definition | 
 |------|------------|
-|configurable | Adjustable to the preference of the _____ |
-|Promotion|An offer that is designed to publicize a product, typically in the fashion of a discount|
-|Transaction| ___ |
+|configurable | Adjustable setting that allows for unique formatting |
+|Promotion|An offer designed to publicize a product, typically in the fashion of a discount|
 |override| A manual change to a default setting. E.g. the default tax rate in ohio is 5.75%, but an override can manually change that value to 5% |
 |Line item| A single item in a transaction|
 
 ## Sales Screen
-The sales screen is where all transaction functions can be found. 
+The sales screen is a functional outlay of the sales process, which gives the user efficient access to all essential functionalities.
+
 ![alt-text](assets/sell-screen.png)
+
 ### Automated Loyalty Prompt
- This loyalty prompt allows you to associate an exiting loyalty customer to a transaction, also allowing the addition of new customer loyalty accounts.
- The prompt is configurable which allows for the prompt to be automated or not.
-TODO SCREENSHOTS
+The loyalty prompt allows you to associate a loyalty customer to a transaction.
+ The prompt is configurable which allows for the prompt to be automated per each transaction
+
+![alt-text](assets/link-loyalty-customer.png)
 
 ### Screen Header
-The screen header gives  access to essential pieces to the sale process
-__TODO__
+The Screen Header gives access to Transaction Menu and the User Information 
+
+![alt-text](assets/sale-header.png)
 
 - #### Application / Transaction Menu
- This menu is a configurable menu that allows you to place relevant and essential sections in an easy-to-use access panel.
+ This menu is a configurable menu that allows you to place relevant and essential sections into an easy-to-use access panel. 
+ E.g. Returns, Employee discount, tax exempt sale, etc.
  TODO SCREENSHOTS
-- #### User Information
-![alt-text](assets/user-icon.png)
->
+- #### User Information   
+
+    ![alt-text](assets/user-icon.png)
+
+
 *Within User Information you have access to the following functionalities*:
 
  -  ##### Lock Screen
-    Commerce supports two lock screen screen functions. A manual lock screen functionality and an automated, adjustable, time activated lock. Both of which require the user to re-enter their password to continue working.
-TODO SCREENSHOTS
- 
+    Commerce supports two lock screen functions. A manual lock and an automated, adjustable, time activated lock. Both of which require the user to re-enter their password to continue working.
+
+![alt-text](assets/sales-lock-screen.png) 
 - ##### Logout
     __Not sure the purpose of this functionality from a sales perspective__ 
 
 TODO SCREENSHOTS
  
 - ##### Change Password
-    Within the sale functionality a user can make a new password, that matches the __configurable... is passwprd criyeria configurable?__ written criteria.
-TODO SCREENSHOTS
-  
+    Within the sale functionality a user can make a new password, that matches the __configurable... is password criteria configurable?__ written criteria.
+
+![alt-text](assets/change-password-sales.png)  
+
 ### Transaction Summary
-   A summary of a given transaction that highlights essential transaction details.
-TODO SCREENSHOTS
- 
+   A summary of the current transaction that highlights essential transaction details.
+
+![alt-text](assets/transaction-summary.png)
+>
+ These details include:
 - #### Subtotal
-    The subtotal, or the pre-tax transaction cost, is viewable and automatically calculated for each item added.
-TODO SCREENSHOTS
+    The subtotal, or the pre-tax transaction cost, is viewable and automatically calculated for each item added. (promotions calculated for)
  
 - #### Discounts / Credits
     A running total of all promotions applied to a transaction can be viewed in the transaction summary viewing bar.
-TODO SCREENSHOTS
+
 - #### Tax
-    The visible tax amount is the summation of all tax prices together, accounting for tax overrides and exemptions.
-TODO SCREENSHOTS
+    The visible tax amount is the summation of the applied transaction tax, accounting for tax overrides and exemptions.
+
 - #### Amount Due 
-    The amount due is the all-inclusive cost that the customer owes for their transaction. This includes promotions and tax.
-TODO SCREENSHOTS
+    The amount due is the all-inclusive cost that the customer owes for their transaction. This includes the subtotal and tax.
 
 ### Rewards
-Rewards is a configurable functionslity tht llows a business to offer rewards to their purchasing customers
-TODO SCREENSHOTS
+TODO 
 
 - #### Find Customer
-    Customer search allows you to find a customer using the information they have given in their loyalty signup
-TODO SCREENSHOTS
+    Customer search allows you to find a loyalty customer using their provided customer information.
+    
+![alt-text](assets/find-loyalty-customer.png)
 
 - #### New Customer
     Adding a loyalty customer is easily accesible and configurable to the wants of the business. Allowing the business to allocate which customer information is optional and which is deemed required.
-TODO SCREENSHOTS
+
+![alt-text](assets/add-loyalty-customer.png)
 
 ### Screen Footer
-The footer adds nonessential, yet helpful information for the user of the system that ensures maximum productivity.
-TODO SCREENSHOTS
+The footer adds nonessential, yet helpful, information for the user of the system that ensures maximum productivity.
+
+![alt-text](assets/sale-footer.png)
 
 - #### Date and Time
-    The date and time are easily viewable in the bottom left of a transaction screen, and are configurable to times zones and configration in how they are read.
-TODO SCREENSHOTS
+    The Date and Time are easily viewable in the footer a transaction screen.
 
-- #### Transaction In       formation
+- #### Transaction Information
     The transaction number __number per day?__ and a running timer for the given transaction are viewable in the sell screen
 
 ### Selling an item
@@ -107,12 +115,13 @@ TODO SCREENSHOTS
 Commerce offers the option the search for an item by keyword or by product number. This allows for items with barcode errors to be added to a transaction with limited time waste.
 
 ### Item detail panel
+
 ![alt-text](assets/item-detail-panel.png)
+
 The item detail panel provides essential information about a transaction. 
-TODO SCREENSHOTS
 
 - #### Item Image
-    Each item has a unique high resolution photo that represents the scanned item __what is the proper reasoning for this__ 
+    Each item has a unique high resolution photo that matches the scanned item __what is the proper reasoning for this__ 
 
 - #### Item Description
     In bold lettering a description of each item in a given transaction can be read, and referenced.
@@ -127,10 +136,15 @@ Allowing the user to make sense of a discounted price
 ### Item Options
 Opening a line items options gives you the ability to access a configurable set of features that directly affect the line item.
 >
-*The following actions are for a single line item.*
+
+![alt-text](assets/line-item-options.png)
+
+![alt-text](assets/more-line-item-options.png)
+
+*The following actions can be taken on a line item.*
                   
 - #### Remove
-    Removing an item effectively takes the item and item cost out of the transaction, automatticaly affecting the amount due.
+    Removing an item effectively takes the item and item cost out of the transaction, automatical   ly affecting the amount due.
 
 - #### Price Override
     Overriding a price on a line item gives the user the option to manually change the price of the item for a reason selected from a pre-determined configurable list. 

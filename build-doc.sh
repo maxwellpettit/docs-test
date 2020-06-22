@@ -40,7 +40,9 @@ echo $'\n' >>  out/JumpMind-Commerce-User-Manual.md
 cat "src/main/markdown/Appendix/Appendix.md" >> out/JumpMind-Commerce-User-Manual.md
 echo $'\n' >>  out/JumpMind-Commerce-User-Manual.md
 
-RESOURCE_SEARCH_PATH="src/main/markdown/User Management/:src/main/markdown/Sales/"
+RESOURCE_SEARCH_PATH="src/main/markdown/Appendix/:src/main/markdown/Beyond POS:src/main/markdown/Backoffice:src/main/markdown/Tax/:src/main/markdown/Orders/:src/main/markdown/Training Mode/:src/main/markdown/Peripherals/:src/main/markdown/Coupons/:src/main/markdown/Sales/:src/main/markdown/UI & Screen Conventions/:src/main/markdown/User Management/:src/main/markdown/Daily Operations/:src/main/markdown/Item Inquiry/:src/main/markdown/Returns Management/:rc/main/markdown/Tendering/:src/main/markdown/Receipts/:src/main/markdown/Customers/:src/main/markdown/Promotions/"
+
+
 
 # Convert to docx
 pandoc --resource-path "$RESOURCE_SEARCH_PATH" -s out/JumpMind-Commerce-User-Manual.md -o out/JumpMind-Commerce-User-Manual.docx
