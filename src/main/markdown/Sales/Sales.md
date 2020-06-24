@@ -18,15 +18,38 @@ Some of the key concepts that will be address in this section include:
 
 | Term | Definition | 
 |------|------------|
-|configurable | Adjustable setting that allows for unique formatting |
+|Retailer|The organization providing goods or services for sale
+|Customer|An individual that is purchasing goods or services 
 |Promotion|An offer designed to publicize a product, typically in the fashion of a discount|
-|override| A manual change to a default setting. E.g. the default tax rate in ohio is 5.75%, but an override can manually change that value to 5% |
+|Override| A manual change to a default setting. E.g. the default tax rate in ohio is 5.75%, but an override can manually change that value to 5% |
 |Line item| A single item in a transaction|
+|configurable | Adjustable setting that allows for unique formatting |
 
 ## Sales Screen
-The sales screen is a functional outlay of the sales process, which gives the user efficient access to all essential functionalities.
+The sales screens allow for transacting sales between a retailer and a customer.  The sales screen looks as follows:
 
 ![alt-text](assets/sell-screen.png)
+
+### Screen Parts
+
+#### Status Bar
+
+![alt-text](assets/sales-status-bar.png)
+
+The status bar provides <danny to put more text here>
+
+ - Device status (and go through individual device statuses)
+   - Pinpad / Payment device
+   - Customer facing display
+   - Cash drawer
+   - Receipt printer
+   - Network
+   
+ - Selling location / Store number
+ 
+ - Device information (device you are selling from)
+ 
+ - JumpMind Commerce software version number
 
 ### Automated Loyalty Prompt  ![configuration](assets/configuration.png)
 The loyalty prompt allows you to associate a loyalty customer to a transaction.
