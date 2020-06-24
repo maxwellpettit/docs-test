@@ -18,9 +18,9 @@ steps:
   - bash: |
       ./build-doc.sh
     displayName: Build
-- task: PublishPipelineArtifact@0
-  displayName: 'Publish'
-  inputs:
-    artifactName: 'doc-html'
-    targetPath: 'out/html'
+  - task: PublishPipelineArtifact@0
+    displayName: 'Publish'
+    inputs:
+      artifactName: 'doc-html'
+      targetPath: 'out/html'
 
