@@ -1,0 +1,26 @@
+# Gradle
+# Build your Java project and run tests with Gradle using a Gradle wrapper script.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/java
+
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+  - bash: |
+      sudo apt-get -qq update
+      wget https://github.com/jgm/pandoc/releases/download/2.9.2.1/pandoc-2.9.2.1-1-amd64.deb -O $HOME/pandoc.deb
+      sudo dpkg -i $HOME/pandoc.deb
+    displayName: Install
+  - bash: |
+      ./build-doc.sh
+    displayName: Build
+- task: PublishPipelineArtifact@0
+  displayName: 'Publish'
+  inputs:
+    artifactName: 'doc-html'
+    targetPath: 'out/html'
+
