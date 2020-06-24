@@ -1,3 +1,5 @@
+rm -rf out
+mkdir out
 # Collect
 cat src/main/markdown/home.md > out/JumpMind-Commerce-User-Manual.md
 echo $'\n' >>  out/JumpMind-Commerce-User-Manual.md
