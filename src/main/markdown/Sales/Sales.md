@@ -86,7 +86,7 @@ TODO SCREENSHOTS
 TODO 
 
 - #### Find Customer
-    Customer search allows you to find a loyalty customer using their provided customer information.
+    Customer search allows the user to find a loyalty customer using their provided customer information.
     
 ![Loyalty-Prompt](assets/find-loyalty-customer.png)
 
@@ -178,22 +178,9 @@ I.e.This can be used when purchasing several of the same item.
 Transaction options are a configurable set of options that allow the user to prompt an action that takes affect on the entire transaction.
 
 
-| icon | Title | description|
-|------|------------|-----------|
-|![alt-text](assets/item-inquiry-tag.png)| Item Inquiry |this is where the item inquiry tag info will go|
-|![alt-text](assets/discount-tag.png)|Discount | this is where discount tag info will go|
-|![alt-text](assets/return-tag.png)|Returns| return tag info ill go here|
-|![alt-text](assets/cancel-icon.png)|Cancel|The user also has the ability to cancel a transaction and it will be abanded and marked as ORPHANED|
-|![alt-text](assets/gift-cards.png)|Gift cards||
-|![alt-text](assets/tax-exempt-sale.png)|tax-exemption|Tax exemption is permitted when a valid tax exemption code is applied to a transaction. |
-|![alt-text](assets/suspend-icon.png)|Suspend| At any point during the sell process the user has the capability to suspend the transaction, for a configurable number of reasons.E.g. customer forgot an item. And this same transaction can be resumed from a new transaction options menu.|
-|![alt-text](assets/orders-icon.png)|Orders||
-|![alt-text](assets/employee-discount-icon.png)|Employee Discount|Employee discounts are configurable to the protocol of a business |
-
-
 |Icon|Definition|
 |-----|--------|
-|![alt-text](assets/item-inquiry.png)|Item Inquiry |this is where the item inquiry tag info will go|
+|![alt-text](assets/item-inquiry.png)|this is where the item inquiry tag info will go|
 |![alt-text](assets/returns-tag.png)|return tag info ill go here|
 |![alt-text](assets/orders-tag.png)| WOrds|
 |![alt-text](assets/gift-cards-tag.png)|Words|
@@ -202,8 +189,6 @@ Transaction options are a configurable set of options that allow the user to pro
 |![alt-text](assets/cancel-tag.png)|The user also has the ability to cancel a transaction and it will be abanded and marked as ORPHANED|
 |![alt-text](assets/employee-discount-tag.png)|Employee discounts are configurable to the protocol of a business |
 |![alt-text](assets/tax-exempt-sale-tag.png)|Tax exemption is permitted when a valid tax exemption code is applied to a transaction.|
-
-
 
 
 - #### Suspend / Resume
