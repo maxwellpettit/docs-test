@@ -42,7 +42,7 @@ have this feature disabled because users are sourced from other systems.
 Authentication is the confirmation that the user is who the user says they are. There are several ways to achieve this. 
 
 ### Types of Authentication
-The commere solution provides authentication through internal security measures or through integration
+The commerce solution provides authentication through internal security measures or through integration
 to third party systems.  For internal security, the commerce application can provide authentication through: 
  - Password
  - Biometric (fingerprint)
@@ -157,26 +157,28 @@ The highlighted functions involved in managing users are:
 
 
  ##### Add User 
-Create new JumpMind Commerce user accounts to assign a new user to a workgroup. TODO SCREENSHOTS
+Create new JumpMind Commerce user accounts to assign a new user to a workgroup. 
+![Add User](assets/add-user.png)
  
  *After a User has been added, this user can be subject to the following functionalities.*
   
  ##### Search for User / List Users
 A list of all pre-existing users, along with their respective workgroups gives access, allowing for account removal or for the user information to be disaplyed and edited.
- TODO SCREENSHOTS
- 
+![User list](assets/user-search.png) 
  ##### Display / Edit User Information_
 Once the user has been selected their information can be viewed and edited. specifically, name, username, and password.
- TODO SCREENSHOTS
+ ![Change Password](assets/edit-user.png) 
+ 
+ * The following functionalities can be accesed within the user menu*
+ 
+ ![user menu](assets/user-options.png)
  
  ##### Reset User Password
-User passwords can be reset 
- TODO SCREENSHOTS
- 
+User passwords can be changed 
+
+
 ##### Lock / Disable User Account
 JumpMind Commerce user accounts can be revoked access through locking a user account.
- TODO SCREENSHOTS
  
 ##### Unlock User Account
 Locked/Disabled user accounts can be unlocked which re-grants the user their respective workgroup permission id's. 
- TODO SCREENSHOTS
