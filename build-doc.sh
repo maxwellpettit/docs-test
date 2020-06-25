@@ -66,8 +66,6 @@ pandoc --css htmlStyle.css --resource-path "$RESOURCE_SEARCH_PATH" -s out/JumpMi
 
 rm -rf out/html/*.md
 
-open out/JumpMind-Commerce-User-Manual.docx
-
-open out/html/JumpMind-Commerce-User-Manual.html
-
-echo "Generated out/JumpMind-Commerce-User-Manual.docx" 
+# open out/JumpMind-Commerce-User-Manual.docx
+# open out/html/JumpMind-Commerce-User-Manual.html
+# echo "Generated out/JumpMind-Commerce-User-Manual.docx" 

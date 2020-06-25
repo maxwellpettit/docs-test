@@ -10,12 +10,13 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-  - bash: |
-      sudo apt-get -qq update
-      wget https://github.com/jgm/pandoc/releases/download/2.9.2.1/pandoc-2.9.2.1-1-amd64.deb -O $HOME/pandoc.deb
-      sudo dpkg -i $HOME/pandoc.deb
+  - script: |
+      sudo apt-get install pandoc
+      # sudo apt-get -qq update
+      # wget https://github.com/jgm/pandoc/releases/download/2.9.2.1/pandoc-2.9.2.1-1-amd64.deb -O $HOME/pandoc.deb
+      # sudo dpkg -i $HOME/pandoc.deb
     displayName: Install
-  - bash: |
+  - script: |
       ./build-doc.sh
     displayName: Build
   - task: PublishPipelineArtifact@0
