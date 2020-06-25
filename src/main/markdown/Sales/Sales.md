@@ -47,7 +47,7 @@ The sales screens allow for transacting sales between a retailer and a customer.
 |![device number](assets/device-number.png)|Which Device the transaction is being performed on|
 |![jumpmind status](assets/jumpmind.png)|JumpMind Commerce software version number|
 
-<How should I talk about yellow and red colors for icons>
+<How should I talk about yellow and red colors for status icons>
 
 
 #### Screen Header
@@ -55,10 +55,10 @@ The Screen Header gives access to Transaction Menu and the User Information
 
 ![alt-text](assets/sale-header.png)
 
-|x|Y|z|
+|View |What it is|Description|
 |---|----|-------|
 |![transaction-menu](assets/hamburger-menu.png)|Application / transaction menu![configuration](assets/configuration.png)|This menu allows you to access relevant and essential functionalities that take affect on an entire transaction.|
-| ![alt-text](assets/user-icon.png) |User Information |ifniejcemidjv|
+| ![alt-text](assets/user-icon.png) |User Information |User informatipn provides the user nickname, User Id, and access to the logout, change password, and lock screen fucntionalities|
 
 #### Item key
 ![alt-text](assets/item-key.png)
@@ -75,10 +75,10 @@ The item detail panel provides essential information about a transaction.
 |---|-----|
 |Item Image ![configuration](assets/configuration.png)|Each item has a unique high resolution photo that matches the scanned item|
 | Item Description|In bold lettering a description of each item in a given transaction can be read, and referenced.|
-| Item Options  ![configuration](assets/configuration.png)|Opening a line items options gives you the ability to access a configurable set of features that directly affect the line item.|
+| Item Options  ![configuration](assets/configuration.png)|Opening a line items options gives you the ability to access a configurable set of features that directly affect the line item. More can be found __HERE__|
 |Quantity|Quantity of the line item|
 |Price| Bold numbers reveal fnal price per line item, while grey numbers are pre-discount.|
-|Discount| I fa discount applies a discount description will be viewable|
+|Discount| Any applied line item discounts are described|
 
 #### Transaction Summary
    A summary of the current transaction that highlights essential transaction details.
@@ -101,7 +101,7 @@ The footer adds nonessential, yet helpful, information for the user of the syste
 
 ![Footer](assets/sale-footer.png)
 
-|Section|blah blah balh|
+|Section|Description|
 |---|-----|
 |Date|Date that a transaction is taking place on|
 |Time|The live time that a transaction is taking place on|
@@ -109,19 +109,32 @@ The footer adds nonessential, yet helpful, information for the user of the syste
 |Timer|Running timer for each transaction that refreshes for each |
 
 
-### Automated Loyalty Prompt  ![configuration](assets/configuration.png)
+### Selling an item
 
-The loyalty prompt allows you to associate a loyalty customer to a transaction.
+#### Customer Loyalty ![configuration](assets/configuration.png)
+ The two ways to attach a customer to a transaction are: 
+  
+|Prompt|Method|Description|
+|---|---|-----|
+|![alt-text](assets/link-loyalty-customer.png)|Automated Loyalty Prompt | The automated loyalty prompt is a configureable prompt which allows for it to be the default first screen in a sale, or the user can link customers manually.
+|![Loyalty-Prompt](assets/find-loyalty-customer.png)| Manual Customer Linking|The loyalty prompt allows you to manually associate a loyalty customer to a transaction using the information they have provided
+|![Add customer](assets/add-loyalty-customer.png)|Adding a new customer|This prompt allows the user to add a new loyalty customer|
+|![edit custoemr](assets/edit-loyalty-customer.png)|Editing an existing customer| Editing a custoemr allows the user to change any area of the customers information|
+|![Unlink Customer](assets/unlink-loyalty-customer.png)|Unlink a linked loyalty customer| An already linked customer can be unlinked from a transaction|
 
-![alt-text](assets/link-loyalty-customer.png)
+#### Ringing an item
+  Scanning the items unique barcode allows for the cooresponding item to appear in the transaction, this applies to all scanned items.
 
-|Prompt|Use|
+
+|Functionalitiy|Description|
 |---|-----|
-|![Loyalty-Prompt](assets/find-loyalty-customer.png)| Customer search allows the user to find a loyalty customer using their provided customer information.|
-|![Add customer](assets/add-loyalty-customer.png) ![configuration](assets/configuration.png)|Allows the addition of a new loyalty customer
+|Scan|Scanning the items unique barcode allows for the cooresponding item to appear in the transaction, this applies to all scanned items.|
+|Key Entry|Manual Item number entry|
+|Item options|Can be found __here__|
+|Transaction options| Can be found __here__|
 
+##### Item transaction options 
 
-### Item transaction options 
 *The following are the transaction options:*
   
 |Icon|Functionality|
@@ -138,9 +151,9 @@ The loyalty prompt allows you to associate a loyalty customer to a transaction.
 |![alt-text](assets/orders-tag.png)| WOrds|
 
 
-### Line item options
+##### Line item options
 
-![Item Detail Panel](assets/item-detail-options.png)
+![Line Item Options](assets/item-detail-options.png)
 
    *The following actions can be taken on a line item.*
 
@@ -169,22 +182,6 @@ The loyalty prompt allows you to associate a loyalty customer to a transaction.
 
 ![alt-text](assets/change-password-sales.png)  
 
-
-### Selling an item
-
-#### Scanning an item
-  Scanning the items unique barcode allows for the cooresponding item to appear in the transaction, this applies to all scanned items.
-
-#### Hand keying an item
-Commerce offers the option the search for an item using a keyword or a product number. This allows for items with barcode errors to be added to a transaction with limited time waste.
-
-
-- #### Sale Amount
-    The sale amount on each item showcases the post promotion and pre-tax total of a line item.
-
-- ####  Discounts / Promotions
-    Current promotions and discount descriptions will be displayed in the item detail panel. 
-Allowing the user to make sense of a discounted price
 
 
 TODO: ignore below this for now
