@@ -130,8 +130,7 @@ The footer adds nonessential, yet helpful, information for the user of the syste
 |---|-----|
 |Scan|Scanning the items unique barcode allows for the cooresponding item to appear in the transaction, this applies to all scanned items.|
 |Key Entry|Manual Item number entry|
-|Item options|Can be found __here__|
-|Transaction options| Can be found __here__|
+
 
 ##### Item transaction options 
 
@@ -139,16 +138,16 @@ The footer adds nonessential, yet helpful, information for the user of the syste
   
 |Icon|Functionality|
 |-----|--------|
-|![alt-text](assets/item-inquiry.png)|this is where the item inquiry tag info will go|
-|![alt-text](assets/returns-tag.png)|return tag info ill go here|
-|![alt-text](assets/gift-cards-tag.png)|Words|
-|![alt-text](assets/discount-option.png)|this is where discount tag info will go|
-|![alt-text](assets/suspend-tag.png)|At any point during the sell process the user has the capability to suspend the transaction, for a configurable number of reasons.E.g. customer forgot an item. And this same transaction can be resumed from a new transaction options menu.|
+|![alt-text](assets/item-inquiry.png)|Item inquiry allows you to search for an item using key word or product number|
+|![alt-text](assets/returns-tag.png)|Returns gives you access to the return subsystem, which allows the user to make a customer return|
+|![alt-text](assets/gift-cards-tag.png)|Gift cards allows you to issue and activate a gift card|
+|![alt-text](assets/discount-option.png)|- Discounts allow for the manual application of discounts onto a product or transaction|
+|![alt-text](assets/suspend-tag.png)|At any point during the sell process the user has the capability to suspend the transaction.E.g. customer forgot an item. And this same transaction can be resumed from a new transaction options menu.|
 |![alt-text](assets/resume-transaction.png)|A previously suspended transaction can be resumed|
 |![alt-text](assets/cancel-tag.png)|The user also has the ability to cancel a transaction and it will be abandoned and marked as ORPHANED|
-|![alt-text](assets/employee-discount-tag.png)|Employee discounts are configurable to the protocol of a business |
+|![alt-text](assets/employee-discount-tag.png)|Employee discounts allow for valid employee Ids to discount a transaction  |
 |![alt-text](assets/tax-exempt-sale-tag.png)|Tax exemption is permitted when a valid tax exemption code is applied to a transaction.|
-|![alt-text](assets/orders-tag.png)| WOrds|
+|![alt-text](assets/orders-tag.png)| Orders gives access to web-order processing and picking|
 
 
 ##### Line item options
