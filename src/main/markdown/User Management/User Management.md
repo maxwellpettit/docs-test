@@ -107,28 +107,28 @@ Commerce users with manager access have the ability to mange users in their data
 
 *The functions involved in managing users are:*
 
--  #### Add User 
+#### Add User 
 Create new JumpMind Commerce user accounts to assign a new user to a workgroup. TODO SCREENSHOTS
  
  *After a User has been added, this user can be subject to the following functionalities.*
   
--  #### Search for User / List Users
+#### Search for User / List Users
 A list of all pre-existing users, along with their respective workgroups gives accces, allowing for account removal or for the user information to be disaplyed and edited.
  TODO SCREENSHOTS
  
--  #### Display / Edit User Information_
+#### Display / Edit User Information_
 Once the user has been selected their information can be viewed and edited
  TODO SCREENSHOTS
  
-- #### Reset User Password
+#### Reset User Password
 User passwords can be reset 
  TODO SCREENSHOTS
  
-- #### Lock / Disable User Account
+#### Lock / Disable User Account
 JumpMind Commerce user accounts can be revoked access through locking a user account.
  TODO SCREENSHOTS
  
-- #### Unlock User Account
+#### Unlock User Account
 Locked/Disabled user accounts can be unlocked which re-grants the user their respective workgroup permission id's. 
  TODO SCREENSHOTS
  
@@ -156,24 +156,24 @@ The highlighted functions involved in managing users are:
 - Unlock User Account
 
 
- #### Add User 
+#### Add User 
 Create new JumpMind Commerce user accounts to assign a new user to a workgroup. 
 ![Add User](assets/add-user.png)
  
  *After a User has been added, this user can be subject to the following functionalities.*
   
- #### Search for User / List Users
+#### Search for User / List Users
 A list of all pre-existing users, along with their respective workgroups gives access, allowing for account removal or for the user information to be disaplyed and edited.
 ![User list](assets/user-search.png) 
- #### Display / Edit User Information_
+#### Display / Edit User Information_
 Once the user has been selected their information can be viewed and edited. specifically, name, username, and password.
  ![Change Password](assets/edit-user.png) 
  
  * The following functionalities can be accesed within the user menu*
  
- ![user menu](assets/user-options.png)
+ ![User Menu](assets/user-options.png)
  
- #### Reset User Password
+#### Reset User Password
 User passwords can be changed 
 
 
