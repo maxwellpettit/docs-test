@@ -22,6 +22,77 @@ repositories {
     jcenter()
 }
 
+task assets {
+    doLast {
+        copy {
+            from fileTree(".").include("**/src/main/markdown/**/assets/*").files
+            into "$buildDir/docs/assets"
+            includeEmptyDirs = false
+        }
+    }
+}
+
+task css {
+    doLast {
+        copy {
+            from files('src/main/markdown/htmlStyle.css')
+            into "$buildDir/docs"
+        }
+    }
+}
+
+task concat {
+   doLast {
+       (file("$buildDir/docs/JumpMind-Commerce-User-Manual.md")).text = files(
+       'src/main/markdown/home.md',
+       'src/main/markdown/Overview/Overview.md',
+       'src/main/markdown/UI & Screen Conventions/UI & Screen Conventions.md',
+       'src/main/markdown/User Management/User Management.md',
+       'src/main/markdown/Daily Operations/Daily Operations.md',
+       'src/main/markdown/Sales/Sales.md',
+       'src/main/markdown/Item Inquiry/Item Inquiry.md',
+       'src/main/markdown/Returns Management/Returns Management.md',
+       'src/main/markdown/Tendering/Tendering.md',
+       'src/main/markdown/Receipts/Receipts.md',
+       'src/main/markdown/Customers/Customers.md',
+       'src/main/markdown/Promotions/Promotions.md',
+       'src/main/markdown/Tax/Tax.md',
+       'src/main/markdown/Coupons/Coupons.md',
+       'src/main/markdown/Peripherals/Peripherals.md',
+       'src/main/markdown/Training Mode/Training Mode.md',
+       'src/main/markdown/Orders/Orders.md',
+       'src/main/markdown/Backoffice/Backoffice.md',
+       'src/main/markdown/Beyond POS/Beyond POS.md',
+       'src/main/markdown/Appendix/Appendix.md',
+       ).collect{it.getText()}.join("\n")
+   }
+}
+
+task html {
+   dependsOn concat, assets, css
+   doLast {
+       exec {
+          workingDir file("$buildDir/docs")
+          commandLine 'pandoc', '--css', 'htmlStyle.css',
+              '-s', "$buildDir/docs/JumpMind-Commerce-User-Manual.md",
+              '-o', "$buildDir/docs/JumpMind-Commerce-User-Manual.html"
+       }
+   }
+}
+
+task pdf {
+   dependsOn concat, assets, css
+   doLast {
+       exec {
+          workingDir file("$buildDir/docs")
+          commandLine 'pandoc',
+              '-s', "$buildDir/docs/JumpMind-Commerce-User-Manual.md",
+              '-o', "$buildDir/docs/JumpMind-Commerce-User-Manual.pdf"
+       }
+   }
+}
+
+
 dependencies {
 
     compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.0'
