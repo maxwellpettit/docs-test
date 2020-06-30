@@ -4,9 +4,16 @@
 
 ### Prompt For Loyalty At Begin
 
-### Search
-
-### Sign Up
+#### Search
+you can search for an exisitng loyalty customer through their:
+- Loyalty
+- Email
+- Phone number
+##### Customer results
+ After entering a customers information, you can thenselect the customer, which adds them to the transaction
+ 
+#### Add Customer
+    
 
 ### Editing
 
