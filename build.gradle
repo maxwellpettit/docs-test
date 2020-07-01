@@ -43,7 +43,8 @@ task css {
 
 task concat {
    doLast {
-       (file("$buildDir/docs/JumpMind-Commerce-User-Manual.md")).text = files(
+       (file("$buildDir/docs/JumpMind-Commerce-User-Manual.md")).text =
+       files(
        'src/main/markdown/home.md',
        'src/main/markdown/Overview/Overview.md',
        'src/main/markdown/UI & Screen Conventions/UI & Screen Conventions.md',
@@ -64,7 +65,9 @@ task concat {
        'src/main/markdown/Backoffice/Backoffice.md',
        'src/main/markdown/Beyond POS/Beyond POS.md',
        'src/main/markdown/Appendix/Appendix.md',
-       ).collect{it.getText()}.join("\n")
+       ).collect{it.getText()}.
+       join("\n\\newpage\n").
+       replaceAll('\\$\\{date\\}', new java.text.SimpleDateFormat('MMM d, yyyy').format(new java.util.Date()))
    }
 }
 
