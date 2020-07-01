@@ -63,7 +63,9 @@ to third party systems.  For internal security, the commerce application can pro
 ![alt-text](assets/user-login-user-password.png)
 
 ### The Logout Process
+
 The logout process allows for a signed in user to exit the commerce system.
+
 ![alt-text](assets/user-options-logoff.png)
     
   
