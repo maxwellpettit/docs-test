@@ -29,7 +29,7 @@ The return screen looks as follows:
  |Title|Functionality|
  |---|-----|
  |Quantity| The number of items being returned will be presented in the format '_ Return item(s)'|
- |Receipted|Under 'receipted' will be a negative value which equayed to the amount the business owes the consumer on a return that had a receipt|
+ |Receipted|Under 'receipted' will be a negative value which equated to the amount the business owes the consumer on a return that had a receipt|
  |non Receipted|Under 'Non Receipted' will be a negative value which equates to the amount the business owes the consumer on a return that did not have a receipt|
  |Tax|The retuned tax value will be presented in a negative number under 'tax'|
  |Amount due|The Amount Due is a total number that equals all returned tender|
@@ -50,7 +50,7 @@ The Screen Header gives access to the Return Menu and the User Information
 Item search allows the user to search for an item that has a missing tag or can not be found otherwise .
 
 #### Return item panel
-The Return Item POnale has essential line item information that relates to a return
+The Return Item Panel has essential line item information that relates to a return
 ![Return Item Panel](assets/return-item-panel.png)
 
 
@@ -77,6 +77,12 @@ Reference sales?
 #### Return policy
  Commerce supports a configured return policy, which allows for a unique return policy. ( dont love this wording)
 E.G. store A requires a receipt and gives the consumer 30 days to return an item, but store B does not Require a receipt and offers 90 days for a return. 
+- The return policy that jumpmind commerce supports is heavily configurable. It supports and offers many different configurations for a return policy. some of these include the following: 
+ -  RETURN_POLICY_NAME - this configuration allows for the policy names to be selcted and added to a given policy
+ - SAME_TENDER_TYPE_ALLOWED	- this configuration allows the business to decide if a return will be refunded with the same type of tender the product ws purchased with. E.g. Cash purchase leads to a cash return and a card purchase leads to a card return/
+- RCPT_RTN_TRANS_COUNT_LIMIT - This configuration allows for a limit to be put on the number of receipted returns a customer can do within a configured time period.
+- REQUIRES_ADDITIONAL_INFO	- this configuration allows the business to require more personal information from the customer to perform the return. E.g. a customer must provide a Drivers license with a nonreceipted return
+Jumpmind commerce supports many more configuration to put the control in the business hand allowing a unique and fully adaptive system. More return policy information can be found HERE
 
 #### Return type 
 |Return type|Description|
