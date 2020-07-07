@@ -2,7 +2,7 @@
 
 ## Responsiveness
 
-* The refers to the Commerce UI's ability to adjust to different form factors, such as desktop, tablet, and mobile screens.
+* This refers to the Commerce UI's ability to adjust to different form factors, such as desktop, tablet, and mobile screens. Allowing for a fully compatible platform to reach customers.
 
 ### Customizable breakpoints for different devices
 
@@ -21,18 +21,18 @@
 
 ## Touchscreen
 
-* ABility to use the app wihtout a mouse
+* ABility to use the app wihtout a mouse, 
 
 ## Keybindings
 
-* See "F2" "F3" etc. key mappings on different menu items.  This allows a user to navigate quickly using the kayboard.
+* See "F2" "F3" etc. key mappings on different menu items.  This allows a user to navigate quickly using the keyboard.
 
 ### Map programabile keyboards
 
 * Support for custom keyboards such as  "Cherry" keyboard (can google that)
 
 ## Icons & Images
-![alt-text](assets/manage-menu-screen.png)
+
 ### Content Provider
 
 ## Virtual keyboard
@@ -44,7 +44,7 @@
 * Grey bar across the tops
 
 ### Help desk Incident Prompt
-
+A help desk incident report is an automated screen that allows the user to be notifed an error has been identifiedf, thi leads to a help desk ticket being reports for fix.
 * The throwing hands up box that happens when there is an error
 
 ### Help Text

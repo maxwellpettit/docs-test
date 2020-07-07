@@ -13,7 +13,7 @@ Item inquiry is a sales functionality that allows the user to hand key search wo
 
  ![Item Inquiry](assets/item-inquiry.png)
 
-The item inquiry screen allows the user to have quick access to 
+The Item Inquiry screen allows the user to have quick access to 
 
 ### Screen parts
 
