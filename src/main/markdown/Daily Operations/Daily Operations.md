@@ -5,7 +5,7 @@
 ### Open/Close Store
 
 ### Store Bank
-![alt-text](assets/manage-menu-screen.png)
+
 ## Till Management
 
 ### Cashier Accountability
@@ -13,7 +13,7 @@
 ### Till Accountability
 
 ### Reconciling
-
+Reconciling is the act of matching inventory records to actual inventory and keeping track of product count and selling count.
 ## Reporting
 
 ### List of functional reports
