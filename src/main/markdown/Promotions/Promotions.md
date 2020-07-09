@@ -16,12 +16,12 @@ For example, to get 50% off of a POP item you would need to buy the item that ha
 Within this example the promotion is a 50% off of a pop item, the qualification is that it as to have a certian product ID, and the reward is 50% off of the item
 
 ### Qualification
-
+A qualification refers to what is neccsesary to be bpught if the customer wants to recieve the reward. For eample, a current prmotion is listed for 50% off of a POP item, but the customer does not uy a POP item and will not get the 50% off of the transaction. On the contrary, if thecustomer has a qualifying POP item, the 50% will be dissocunted from the transaction.
 
 ### Qualification Items
 
 ### Reward
-
+A Reward is the promotion that a customer will recieve, given that they are purhcashing the proper qualification items.
 ### Reward Items
 
 ## Supported Promotions:

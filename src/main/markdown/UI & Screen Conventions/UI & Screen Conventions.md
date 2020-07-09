@@ -42,6 +42,7 @@
 ### Status bar
 
 * Grey bar across the tops
+see sales
 
 ### Help desk Incident Prompt
 A help desk incident report is an automated screen that allows the user to be notifed an error has been identifiedf, thi leads to a help desk ticket being reports for fix.
