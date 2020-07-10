@@ -24,7 +24,7 @@ steps:
       javaHomeOption: 'JDKVersion'
       jdkVersionOption: '1.8'
       jdkArchitectureOption: 'x64'
-      tasks: 'pdf html'
+      tasks: 'userGuidePdf paramsPdf'
   - task: PublishPipelineArtifact@0
     displayName: 'Publish'
     inputs:
