@@ -105,9 +105,22 @@ task paramsPdf {
    }
 }
 
+task datamodelPdf {
+   dependsOn generateDocs
+   doLast {
+       exec {
+          workingDir file("$buildDir/docs")
+          commandLine 'pandoc',
+              '-s', "$buildDir/docs/JumpMind-Commerce-DataModel.md",
+              '-o', "$buildDir/docs/JumpMind-Commerce-DataModel.pdf"
+       }
+   }
+}
+
 
 
 
 dependencies {
     compile "org.jumpmind.pos:nu-server:$commerceVersion"
+    compile "org.jumpmind.pos:nu-vertex:$commerceVersion"
 }

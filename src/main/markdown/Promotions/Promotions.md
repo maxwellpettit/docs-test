@@ -1,5 +1,5 @@
 # Promotions
-A prmotoion consist of any deviation in the original cost of an item. 
+A promotion consist of any deviation in the original cost of an item. 
 
 ## Concepts
 - Qualification- A qualification defines what you need to buy to get a specific reward
