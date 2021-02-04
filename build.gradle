@@ -49,6 +49,7 @@ task concat {
        'src/main/markdown/User Management/User Management.md',
        'src/main/markdown/Daily Operations/Daily Operations.md',
        'src/main/markdown/Sales/Sales.md',
+       'src/main/markdown/Sales/Transaction Operations.md',
        'src/main/markdown/Item Inquiry/Item Inquiry.md',
        'src/main/markdown/Returns Management/Returns Management.md',
        'src/main/markdown/Tendering/Tendering.md',
@@ -121,6 +122,6 @@ task datamodelPdf {
 
 
 dependencies {
-    compile "org.jumpmind.pos:nu-server:$commerceVersion"
-    compile "org.jumpmind.pos:nu-vertex:$commerceVersion"
+    compile "org.jumpmind.pos:commerce-server:$commerceVersion"
+    compile "org.jumpmind.pos:commerce-vertex:$commerceVersion"
 }

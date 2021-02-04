@@ -182,9 +182,6 @@ The footer adds nonessential, yet helpful, information for the user of the syste
 ![alt-text](assets/change-password-sales.png)  
 
 
-
-TODO: ignore below this for now
-
 ## Transactions
 Talk about the different type of transactions:
   - Control - link to ops
@@ -201,18 +198,6 @@ Talk about the different type of transactions:
 #### Device Id - Configurable format
 
 #### Business Date yyyyMMdd
-
-### Operations
-
-#### Suspend / Resume
-
-#### Cancel
-
-#### Gift Receipt (QR Code)
-
-#### Tax Exempt
-
-#### Employee Discounts
 
 ## Items
 
@@ -270,6 +255,7 @@ Talk about the different type of transactions:
 #### Void
 
 #### Price Override
+
 After an item has been added to sale you can select options -> price override. Following this, manually insert the new value and select the reason of the override.
 <img align="right" src="doc/subpagelist.png">![alt-text](assets/preoptions-sale-screen.png )
 
@@ -287,10 +273,12 @@ Manual single item discounts can be applied to a singular item by selecting opti
 
 ![alt-text](assets/manual-percent-discount.png)
 ##### Transaction discount
+
 Manual transaction disounts can be applied to the entire transaction by selecting hamburger menu -> discounts -> Percent discount or Amount discount and inserting the corrrect discount for the specific item (with proper reasoning)
 ![alt-text](assets/sell-menu-transactionsoptions.png)
 
 ![alt-text](assets/transaction-discount-options.png)
+
 #### Tax Override
 
 ![alt-text](assets/tax-override-menu.png)

@@ -31,14 +31,3 @@ Reconciling is the act of matching inventory records to actual inventory and kee
 ## Pay Out
 
 ## No Sale
-
-## Transaction Operations
-
-### Post Void
-
-### Gift Receipt
-
-### Receipt Reprint
-
-### Orphaned Transactions
-

@@ -13,6 +13,8 @@ cat "src/main/markdown/Daily Operations/Daily Operations.md" >> out/JumpMind-Com
 echo $'\n' >>  out/JumpMind-Commerce-User-Manual.md
 cat "src/main/markdown/Sales/Sales.md" >> out/JumpMind-Commerce-User-Manual.md
 echo $'\n' >>  out/JumpMind-Commerce-User-Manual.md
+cat "src/main/markdown/Sales/Transaction Operations.md" >> out/JumpMind-Commerce-User-Manual.md
+echo $'\n' >>  out/JumpMind-Commerce-User-Manual.md
 cat "src/main/markdown/Item Inquiry/Item Inquiry.md" >> out/JumpMind-Commerce-User-Manual.md
 echo $'\n' >>  out/JumpMind-Commerce-User-Manual.md
 cat "src/main/markdown/Returns Management/Returns Management.md" >> out/JumpMind-Commerce-User-Manual.md
