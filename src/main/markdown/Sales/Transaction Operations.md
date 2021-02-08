@@ -2,7 +2,7 @@
 
 ## Suspend / Resume
 
-At any point during the sell process the user has the capability to suspend the transaction, for example if a customer forgot an item. This same transaction can be resumed from the transaction menu on the sale screen.
+At any point during the sell process the user has the capability to suspend the transaction, for example if a customer forgot an item. This same transaction can later be resumed from the transaction menu on the sale screen.
 
 ![SuspendButton](assets/suspend-tag.png)
 ![ResumeButton](assets/resume-transaction.png)
@@ -63,7 +63,7 @@ Mark the current transaction as tax exempt.
 
 ## Employee Discounts
 
-Search for employee discounts to apply to the current transaction
+Search for employee discounts to apply to the current transaction.
 
 ## Item Inquiry
 
