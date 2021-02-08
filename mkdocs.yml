@@ -1,1 +1,25 @@
 site_name: JumpMind Commerce User Guide
+theme: readthedocs
+
+nav:
+  - Home: index.md
+  - Overview: Overview/Overview.md
+  - Backoffice: Backoffice/Backoffice.md
+  - Beyond POS: Beyond POS/Beyond POS.md
+  - Coupons: Coupons/Coupons.md
+  - Customers: Customers/Customers.md
+  - Daily Operations: Daily Operations/Daily Operations.md
+  - Item Inquiry: Item Inquiry/Item Inquiry.md
+  - Orders: Orders/Orders.md
+  - Peripherals: Peripherals/Peripherals.md
+  - Promotions: Promotions/Promotions.md
+  - Receipts: Receipts/Receipts.md
+  - Returns Management: Returns Management/Returns Management.md
+  - Sales: Sales/Sales.md
+  - Transaction Operations: Sales/Transaction Operations.md
+  - Tax: Tax/Tax.md
+  - Tendering: Tendering/Tendering.md
+  - Training Mode: Training Mode/Training Mode.md
+  - UI & Screen Conventions: UI & Screen Conventions/UI & Screen Conventions.md
+  - User Management: User Management/User Management.md
+  - Appendix: Appendix/Appendix.md
